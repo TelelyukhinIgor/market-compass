@@ -108,7 +108,7 @@ See [Validation and limits](docs/VALIDATION.md) for the checks run on this copy.
 
 ### Project status
 
-The original application reached a deployed research prototype. Its data ingestion, charting, persistent levels, and Telegram workflow were implemented. The original operation was paused in November 2026.
+Market Compass was built and deployed as a working research prototype: data ingestion, charting, persistent levels, and the Telegram workflow are implemented. This repository is a public showcase copy of that work, with portable configuration and synthetic demo data. It is not a hosted service.
 
 This repository is an English publication copy of that work, with portable configuration and synthetic demo data. On a Linux publication host, `pnpm install --frozen-lockfile`, the TypeScript check (`pnpm check`), and a production `pnpm build` completed successfully. Live data refresh, Telegram delivery, and a new deployment were not run.
 
