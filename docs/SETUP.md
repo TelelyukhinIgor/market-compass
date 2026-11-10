@@ -19,7 +19,7 @@ Register your own Sites project or adapt the worker to your Cloudflare account. 
 
 The authentication boundary must strip untrusted oai-authenticated-user-* headers and supply verified identity. Do not expose the worker with spoofable client-supplied identity headers. The checked-in preview sign-in mock is for local development only.
 
-The deployment's data, users, access rules and schedules are not included in this repository. Publishing code does not deploy the application or reactivate the original installation.
+This repository is a public showcase copy with portable configuration and synthetic demo data. It is not a hosted service. Credentials, live databases, recipient lists, and schedules are not included, and publishing the source does not create a running deployment.
 
 ## Data and Telegram
 
@@ -29,4 +29,4 @@ Report operations have side effects: they may request provider data and send Tel
 
 ## Build verification
 
-Use pnpm build in a compatible environment after installing native dependencies for that machine. The package passed TypeScript checks here, but this Mac host rejected the cached Rolldown native binding on code-signature grounds. No production build or new deployment was completed during this handoff.
+Use pnpm build in a compatible environment after installing native dependencies for that machine. TypeScript checks and a production `pnpm build` passed on a Linux host on 2026-11-10. Run a fresh install on each machine.
