@@ -1,32 +1,36 @@
 # Market Compass
 
-### Six markets. Two analytical horizons. A clearer view of price structure.
+> Inspect price structure across six markets, preserve important levels, and deliver consistent chart reports to Telegram.
 
 ![Market Compass architecture overview](assets/banner.svg)
 
+**Cross-timeframe context** · **Persistent price levels** · **Telegram chart reports**
+
+**Status:** `Research prototype · Source published · No order execution`
+
+[Overview](#in-30-seconds) · [Architecture](#architecture) · [Setup](docs/SETUP.md) · [Validation](docs/VALIDATION.md) · [Contact](#contact)
+
+**This is not investment advice.** Market Compass is a research dashboard. It observes markets and does not place orders. Level-strength scores are heuristics, not calibrated probabilities, and not evidence of trading profitability.
+
 ## In 30 seconds
 
-Market Compass is a **research dashboard**, not a trading system. It turns scattered market checks into one explainable workflow: inspect price structure across six instruments, see where important levels came from, keep strong levels even when they sit off the visible scale, and deliver the same chart view to Telegram.
+Market Compass turns scattered market checks into one explainable workflow: inspect price structure across six instruments, see where important levels came from, keep strong levels even when they sit off the visible scale, and deliver the same chart view to Telegram.
 
-It observes markets. It does not place orders. Level-strength scores are heuristics, not calibrated probabilities, and not evidence of trading profitability.
-
-**This is not investment advice.** Nothing in this repository is a recommendation to buy, sell, or hold any instrument.
-
-Built by **Igor Telelyukhin**, who organizes how people and businesses work with AI where mistakes are expensive. This dashboard is one applied research tool. Independent stress testing of trading strategies — including tail risk, martingale and grid behavior, and curve fitting — is a separate consulting practice.
+Built by **Igor Telelyukhin**, who organizes how people and businesses work with AI where mistakes are expensive. This dashboard is a published research tool. Independent stress testing of trading strategies is a [separate consulting practice](https://github.com/TelelyukhinIgor/TelelyukhinIgor/blob/main/docs/strategy-validation.md).
 
 ## For technical due diligence
 
 ### Architecture
 
 ```mermaid
-flowchart LR
-  Provider["Market data adapters"] --> Validate["OHLC checks and calendars"]
-  Validate --> Analyze["ATR, pivots, and level ranking"]
-  Analyze --> Store["Snapshots and persistent strong levels"]
-  Store --> UI["React dashboard"]
-  Store --> Charts["Shared PNG charts"]
-  Charts --> Telegram["Telegram albums"]
-  Store --> MCP["MCP tools for explicit refresh and delivery"]
+flowchart TB
+  Provider[Market data adapters] --> Validate[OHLC checks and calendars]
+  Validate --> Analyze[ATR, pivots, and level ranking]
+  Analyze --> Store[Snapshots and persistent strong levels]
+  Store --> UI[React dashboard]
+  Store --> Charts[Shared PNG charts]
+  Charts --> Telegram[Telegram albums]
+  Store --> MCP[MCP tools for explicit refresh and delivery]
 ```
 
 | Layer | Responsibility |
