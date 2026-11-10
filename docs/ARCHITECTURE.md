@@ -26,4 +26,4 @@ Grouping and retracement thresholds are implementation heuristics. Their predict
 
 An intraday report uses H1 charts and refreshes contributing H1/H4/D1/W1 context. A position report uses D1 charts and refreshes D1/W1. Progress and request IDs persist between bounded calls so delivery can resume without intentionally duplicating an already completed report.
 
-The original application's archived operating state is separate from this source tree. There are no active external jobs, saved credentials or recipient chats in the publication package.
+This repository is a public showcase copy with portable configuration and synthetic demo data. It is not a hosted service. Credentials, live databases, recipient lists, and schedules are not included, and publishing the source does not create a running deployment.

@@ -16,7 +16,7 @@ The build limitation is recorded, not counted as a pass. A fresh compatible depe
 
 Changes from the source snapshot: English UI/API/report text, English locale, Market Compass branding, environment-based owner/viewer identities, placeholder hosting identity, blank initial sources, disabled initial schedule flag, and synthetic chart seed.
 
-The original deployed site and its schedules were not modified.
+This repository is a public showcase copy with portable configuration and synthetic demo data. It is not a hosted service. Credentials, live databases, recipient lists, and schedules are not included, and publishing the source does not create a running deployment.
 
 ## Re-verification
 

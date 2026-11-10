@@ -6,7 +6,7 @@
 
 **Cross-timeframe context** · **Persistent price levels** · **Telegram chart reports**
 
-**Status:** `Research prototype · Source published · No order execution`
+**Status:** `Research prototype · Code available under a non-commercial license · No order execution`
 
 [Overview](#in-30-seconds) · [Architecture](#architecture) · [Setup](docs/SETUP.md) · [Validation](docs/VALIDATION.md) · [Contact](#contact)
 
@@ -79,7 +79,7 @@ pnpm dev
 
 Local preview uses port **5173**. Before enabling writes, set the owner identity, initialize the database schema, and configure a 64-character hexadecimal encryption key. See [Setup](docs/SETUP.md).
 
-**The checked-in hosting ID is a placeholder.** Register your own deployment and bind its own database. No original account, database contents, API keys, Telegram chats, or active schedules are included.
+**The checked-in hosting ID is a placeholder.** Register your own deployment and bind its own database.
 
 ### Demo data and integrations
 
@@ -101,16 +101,14 @@ See [Validation and limits](docs/VALIDATION.md) for the checks run on this copy.
 ### What is intentionally not included
 
 - Production credentials, API keys, Telegram chats, or recipient addresses
-- The original live database, report archive, or schedules
 - Historical provider datasets
 - Performance figures, backtests, or claims of trading edge
-- A running hosted deployment — publishing this repository does not reactivate the original installation
 
 ### Project status
 
 Market Compass was built and deployed as a working research prototype: data ingestion, charting, persistent levels, and the Telegram workflow are implemented. This repository is a public showcase copy of that work, with portable configuration and synthetic demo data. It is not a hosted service.
 
-This repository is an English publication copy of that work, with portable configuration and synthetic demo data. On a Linux publication host, `pnpm install --frozen-lockfile`, the TypeScript check (`pnpm check`), and a production `pnpm build` completed successfully. Live data refresh, Telegram delivery, and a new deployment were not run.
+On a Linux publication host, `pnpm install --frozen-lockfile`, the TypeScript check (`pnpm check`), and a production `pnpm build` completed successfully. Live data refresh, Telegram delivery, and a new deployment were not run.
 
 ### Disclaimer
 
@@ -127,4 +125,4 @@ If you need an independent review of a trading process or strategy — especiall
 - Email: [telelyhina@icloud.com](mailto:telelyhina@icloud.com)
 - LinkedIn: [Igor Telelyukhin](https://www.linkedin.com/in/igor-telelyukhin/)
 
-This repository is a demonstration. Publishing the source does not reactivate the original hosted application.
+This repository is a public showcase copy with portable configuration and synthetic demo data. It is not a hosted service. Credentials, live databases, recipient lists, and schedules are not included, and publishing the source does not create a running deployment.

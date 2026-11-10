@@ -7,6 +7,6 @@ Original application code and documentation in this repository are licensed unde
 
 Third-party software, UI components, and the embedded chart font retain their own licenses. See THIRD_PARTY.md and the notices next to those files.
 
-This publication copy does not include production credentials, a live database, private recipient addresses, provider datasets, or the original hosted deployment. Publishing the source does not grant a commercial license and does not reactivate any existing service.
+This repository is a public showcase copy with portable configuration and synthetic demo data. It is not a hosted service. Credentials, live databases, recipient lists, and schedules are not included, and publishing the source does not create a running deployment. Publishing the source does not grant a commercial license.
 
 This software is research tooling. It is not investment advice and does not constitute a trading system.
