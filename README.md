@@ -122,7 +122,7 @@ Original application code and documentation are under the [PolyForm Noncommercia
 
 If you need an independent review of a trading process or strategy — especially where tail risk, grid or martingale structures, or overfitting are a concern — or if you want this research workflow adapted to your own desk:
 
-- Email: [telelyhina@icloud.com](mailto:telelyhina@icloud.com)
+- Email: [igor@telelyukhin.com](mailto:igor@telelyukhin.com)
 - LinkedIn: [Igor Telelyukhin](https://www.linkedin.com/in/igor-telelyukhin/)
 
 This repository is a public showcase copy with portable configuration and synthetic demo data. It is not a hosted service. Credentials, live databases, recipient lists, and schedules are not included, and publishing the source does not create a running deployment.
